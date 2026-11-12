@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  /* Deep blue-black reads richer than flat #020617 and lets the cyan/indigo
+     accent glows show through. */
+  --background: #05070d;
+  --foreground: #e8eefb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* The dashboard is dark-only, so pin the scheme instead of following the OS
+   (a light OS setting would otherwise flash a white background, and native
+   controls - select dropdowns especially - need to render dark). */
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* Geist is loaded by next/font in layout.js; the old `Arial, Helvetica`
+     rule here was overriding it and made the whole UI look dated. */
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgb(34 211 238 / 0.35);
+  color: #f0f9ff;
+}
+
+/* Slim scrollbars tinted with the accent gradient. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(71 85 105 / 0.9) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(34 211 238 / 0.45), rgb(99 102 241 / 0.45));
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgb(34 211 238 / 0.8), rgb(99 102 241 / 0.8));
+  background-clip: padding-box;
+}
+
+/* Panels settle into place on load. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise-in {
+  animation: rise-in 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Breathing halo behind the live status dots. */
+@keyframes halo {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+.halo {
+  animation: halo 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise-in,
+  .halo {
+    animation: none;
+  }
+}
+

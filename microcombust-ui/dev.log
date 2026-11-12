@@ -1,0 +1,20 @@
+
+> microcombust-ui@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.64:3000
+✓ Ready in 418ms
+✓ Running next.config.ts took 45ms
+- Cache Components enabled
+- Partial Prefetching enabled
+- Experiments (use with caution):
+  ✓ agentFeedback
+
+⚠ Slow filesystem detected. The benchmark took 331ms. If \\?\D:\######IMPORTANT\nasa-fire-safety\microcombust-ui\.next\dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+ GET / 200 in 276ms (next.js: 149ms, application-code: 127ms)
+ GET / 200 in 52ms (next.js: 1.5ms, application-code: 50ms)
+ GET / 200 in 37ms (next.js: 1.2ms, application-code: 35ms)
+ GET / 200 in 36ms (next.js: 1.4ms, application-code: 35ms)

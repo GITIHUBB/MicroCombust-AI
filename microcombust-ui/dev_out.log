@@ -1,0 +1,14 @@
+
+> microcombust-ui@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://100.100.47.29:3000
+✓ Ready in 400ms
+✓ Running next.config.ts took 37ms
+- Cache Components enabled
+- Partial Prefetching enabled
+- Experiments (use with caution):
+  ✓ agentFeedback
+

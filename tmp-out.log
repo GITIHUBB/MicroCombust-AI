@@ -1,0 +1,16 @@
+NASA Space Fire Safety API -> http://127.0.0.1:8080
+INFO:     127.0.0.1:65039 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65051 - "POST /query-agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65072 - "POST /query-agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65076 - "POST /query-agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65080 - "POST /query-agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65088 - "POST /query-agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61101 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63070 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63070 - "OPTIONS /query-agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61074 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63070 - "POST /query-agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51693 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53048 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51693 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53048 - "GET / HTTP/1.1" 200 OK
